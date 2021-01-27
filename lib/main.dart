@@ -2,14 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/constants.dart';
 //import 'package:flutter_application_1/screens/home/home_screen.dart';
 import 'package:flutter_application_1/screens/selection_menu/selection_menu.dart';
-import 'tasks.dart';
 
 void main() {
   // needs to be initialized before using workmanager package
   WidgetsFlutterBinding.ensureInitialized();
-
-  initializeTasks();
-
   runApp(MyApp());
 }
 
