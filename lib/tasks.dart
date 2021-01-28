@@ -6,7 +6,7 @@ const myTask = "scream1";
 void initializeTasks() {
   // initialize Workmanager with the function which you want to invoke after any periodic time
   Workmanager.initialize(callbackDispatcher);
-  // Periodic task registration
+
   Workmanager.registerOneOffTask(
       "ScreamTask",
       // use the same task name used in callbackDispatcher function for identifying the task
