@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_application_1/tasks.dart';
-import 'package:minimize_app/minimize_app.dart';
 import 'package:flutter_sound/flutter_sound.dart';
 
 class Body extends StatefulWidget {
@@ -50,6 +50,7 @@ class _BodyState extends State<Body> {
       await _myPlayer.startPlayer(
           fromURI: "https://luan.xyz/files/audio/ambient_c_motion.mp3",
           codec: Codec.mp3);
+      initializeTasks();
       setState(() {
         btn1Text = "Stop";
       });
